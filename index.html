@@ -59,6 +59,27 @@ fclose($fp);
             docElement.className = className.replace(classRE, '$1js$2');
         })();
         </script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyATH1V4M17lc3LxFTY97ar5-r6EWV9n-KE",
+    authDomain: "tatti-ff069.firebaseapp.com",
+    databaseURL: "https://tatti-ff069-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "tatti-ff069",
+    storageBucket: "tatti-ff069.appspot.com",
+    messagingSenderId: "331614283351",
+    appId: "1:331614283351:web:f45cc31d652d886074e512"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
         <script type="text/javascript">
         (function() {
           if ('PerformanceObserver' in window && 'PerformancePaintTiming' in window) {
